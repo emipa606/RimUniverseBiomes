@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A60E7A5A-297E-4174-8EFE-D54D0008E0F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RimUniverse.BiomesModule</RootNamespace>
+    <AssemblyName>RimUniverse.BiomesModule</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BiomeWorkers\BiomeWorker_AridShrubland.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_BorealForest.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_ColdBog.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Debug.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Desert.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_ExtremeDesert.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Grassland.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_IceSheet.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_MoistDeciduousForest.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Permafrost.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Savanna.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TemperateForest.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TemperateSwamp.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TropicalRainforest.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TropicalSwamp.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Tundra.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Woodland.cs" />
+    <Compile Include="GenSteps\GenStep_RockChunks_Generate.cs" />
+    <Compile Include="GenSteps\GenStep_ScatterRuinsSimple_ScatterAt.cs" />
+    <Compile Include="GenSteps\GenStep_ScatterShrines_ScatterAt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Submods\WaterResponsive\WaterFreezes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\1.2\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="0MultiplayerAPI">
+      <HintPath>..\..\1.2\Assemblies\0MultiplayerAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RimUniverse.CoreModule">
+      <HintPath>..\..\..\RimUniverse - Core Module\Source\RimUniverse - Core Module\bin\Debug\RimUniverse.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

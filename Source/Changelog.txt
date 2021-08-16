@@ -1,0 +1,76 @@
+RIMUNIVERSE - CHANGELOG
+======================================================================================================================
+v1.01.0082	BIOMES MODULE
+ - Updated all plant rations for all biomes.
+ - Added compatibility for Erin's Mountain Animals.
+ - Rebalanced some animal spawn rates.
+
+
+v1.01.0080	BIOMES MODULE
+ - Updated all weather ratios for all biomes.
+ - Updated all animal distribution for all biomes.
+ - Updated all thresholds for all biomes.
+ - Made animals more restricted to specific biomes instead of getting a wide range of biomes to spawn.
+ - Made some animals special with really low spawn rates. Also made others to spawn only on very specific locations.
+ - Cold Bog, Temperate Swamp and Tropical Swamp map thresholds has been tuned to get a more swampy feeling location.
+ - Fixed a problem preventing Kangaroos to spawn on their biomes.
+
+
+v1.01.0075	BIOMES MODULE
+ - Added compatibility for ReGrowth - Biomes of the Rim.
+
+
+v1.01.0071(2)	BIOMES MODULE
+ - Hotfix for Grassland biome.
+
+
+v1.01.0071(1)	BIOMES MODULE
+ - Added compatibility for Multiplayer (theorically).
+
+
+v1.01.0071	BIOMES MODULE
+ - Added compatibility for Vanilla Animals Expanded - Temperate Forest.
+
+
+v1.01.0070	BIOMES MODULE
+ - Added compatibility for Vanilla Animals Expanded - Arid Shrubland.
+ - Added compatibility for Vanilla Animals Expanded - Desert.
+ - Added compatibility for Vanilla Animals Expanded - Extreme Desert.
+ - Added compatibility for Vanilla Animals Expanded - Tundra.
+ - Added compatibility for Vanilla Animals Expanded - Ice Sheet.
+ - Added compatibility for Vanilla Animals Expanded - Boreal Forest.
+ - Added compatibility for Vanilla Animals Expanded - Tropical Rainforest.
+ - Added compatibility for Vanilla Animals Expanded - Tropical Swamp.
+ - Added compatibility for Vanilla Animals Expanded - Australia.
+ - Added compatibility for Vanilla Fishing Expanded.
+
+
+v1.01.0060	BIOMES MODULE
+ - Added compatibility for Dinosauria.
+
+
+v1.01.0059	BIOMES MODULE
+ - Added compatibility for Alpha Animals.
+
+
+v1.01.0058	BIOMES MODULE
+ - Added compatibility for Megafauna.
+
+
+v1.01.0057	BIOMES MODULE
+ - Updated weather, wildAnimals and wildPlants for each biome.
+
+
+v1.01.0054	BIOMES MODULE
+ - Added WaterResponsive: Rivers, Lakes, Marsh water and coastal water will freeze on extreme cold temperature.
+
+
+v1.01.0047 - BIOMES MODULE
+ - Includes five new biomes: Permafrost, Moist Deciduous Forest, Woodland, Grassland and Savanna.
+ - Overrides completely they way the game choose the tile for each biome to give a more natural feel based on Whittaker's Biome Diagram.
+
+
+v1.00.0016 - CORE MODULE
+ - Integrated "ShowModDesignators" by Erdelf.
+
+

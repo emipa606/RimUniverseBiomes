@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimUniverse - Biomes (Continued)</name>
+  <packageId>Mlie.RimUniverseBiomes</packageId>
+  <author>Balthoraz</author>
+  <url>https://github.com/emipa606/RimUniverseBiomes</url>
+  <supportedVersions>
+    <li>1.2</li>
+    <li>1.3</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Mlie.RimUniverseCoreModule</packageId>
+      <displayName>RimUniverse - Core (Continued)</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2576822036</steamWorkshopUrl>
+      <downloadUrl>https://github.com/emipa606/RimUniverseCoreModule/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Mlie.RimUniverseCoreModule</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Balthorazs mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=2257048351
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/RimUniverseBiomes][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/p7Fv1Z6.gif[/img] [url=https://ko-fi.com/balthoraz][img]https://i.imgur.com/W5PoNod.png[/img][/url]
+[h1]TEMPORALY NOT MAINTAINED[/h1]
+As I&apos;m working on another project, I don&apos;t have time to dedicate to this mod, also there are other mods outside doing what I wanted to do with this mod. So this one is not a priority for me at the moment. I&apos;m still working on RimUniverse series, but will be focused on other aspects of RimWorld.
+
+
+[h1]Main features[/h1]
+- [b]Biomes[/b] reworked. A complete new biome tile selection simulating real life biome distribution based on Whittaker&apos;s biome diagram.
+- [b]Added new biomes:[/b] Permafrost, Grassland, Savanna, Woodland and Moist Deciduous Forest.
+- Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.
+[hr][/hr]
+[h1]Biomes reworked[/h1]
+[img]https://i.imgur.com/8w1FOlo.png[/img]
+[img]https://i.imgur.com/xap24UJ.gif[/img]
+
+[h1]Submods[/h1]
+- [b]WaterResponsive:[/b] Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.
+
+
+[h1]Compatible with[/h1]
+[img]https://i.imgur.com/xz7IeLQ.jpg[/img] [img]https://i.imgur.com/ywrqRTL.jpg[/img] [img]https://i.imgur.com/wOaNszc.jpg[/img]
+[img]https://i.imgur.com/GxIHoiR.jpg[/img] [img]https://i.imgur.com/QFHYewa.jpg[/img] [img]https://i.imgur.com/Qq9Rf4g.jpg[/img]
+[img]https://i.imgur.com/pyM4sSk.jpg[/img] [img]https://i.imgur.com/pjxJT2q.jpg[/img] [img]https://i.imgur.com/mWA6hUY.jpg[/img]
+[img]https://i.imgur.com/wCnQzIV.jpg[/img] [img]https://i.imgur.com/mJRuwuK.jpg[/img] [img]https://i.imgur.com/WRtwrQr.jpg[/img]
+[img]https://i.imgur.com/LtU1iqY.jpg[/img] [img]https://i.imgur.com/k24DnCA.jpg[/img] [img]https://i.imgur.com/tX9WSaN.jpg[/img]
+[img]https://i.imgur.com/nbgHqYW.jpg[/img] [img]https://i.imgur.com/vWPBEN4.jpg[/img] [img]https://i.imgur.com/cEmPWTt.jpg[/img]
+[img]https://i.imgur.com/tocupOL.jpg[/img] [img]https://i.imgur.com/mv46KZx.jpg[/img] [img]https://i.imgur.com/8FkvKEj.jpg[/img]
+
+
+[hr][/hr]
+Also thanks to Erdelf, Dr Zhivago, Jamaican Castle and Garthor for helping me in my first steps in modding making this mod and all its coming updates possible.
+
+You can track the mod distribution in Google Sheets:
+https://docs.google.com/spreadsheets/d/1fF-fCsHRDGCFCzfQ3oNCWXQM7hxP0x5oreab4G-mqMI/edit?usp=sharing
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
+</ModMetaData>
+

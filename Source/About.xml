@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimUniverse - Biomes</name>
+  <author>Balthoraz</author>
+  <packageId>Balthoraz.RimUniverse.BiomesModule</packageId>
+  <supportedVersions>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    <li>
+      <packageId>Balthoraz.RimUniverse.CoreModule</packageId>
+      <displayName>RimUniverse - Core</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2255090872</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <description>
+   &lt;size=18&gt;Features&lt;/size&gt;
+   - Biomes reworked. A complete new biome system simulating real life biome distribution based on Whittaker's biome diagram.
+   - Added new biomes: Permafrost, Grassland, Savanna, Woodland and Moist Decidius Forest.
+   - Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.
+
+   &lt;size=18&gt;Submods&lt;/size&gt;
+   - WaterResponsive: Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.		
+
+
+   &lt;size=18&gt;Contributions (Credits):&lt;/size&gt;
+   Erdelf - ShowModDesignators (Introduced on RimUniverse).
+
+   Also thanks to erdelf, Dr Zhivago, Jamaican Castle and Garthor to help me on my first steps in modding and made this mod and all future updates possible.
+
+	</description>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Balthoraz.RimUniverse.CoreModule</li>
+    <li>ReGrowth.BOTR.Core</li>
+    <li>ReGrowth.BOTR.TemperateForestExpansion</li>
+    <li>ReGrowth.BOTR.TundraExpansion</li>
+    <li>ReGrowth.BOTR.BorealExpansion</li>
+    <li>ReGrowth.BOTR.ColdBogExpansion</li>
+    <li>Erin.Mountain</li>
+  </loadAfter>
+</ModMetaData>
