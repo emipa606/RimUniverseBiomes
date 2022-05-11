@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>RimUniverse - Biomes (Continued)</name>
   <packageId>Mlie.RimUniverseBiomes</packageId>
@@ -19,11 +19,11 @@
   <loadAfter>
     <li>Mlie.RimUniverseCoreModule</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Balthorazs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2257048351
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
     [tr]
@@ -32,14 +32,14 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2257048351
     [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
-[img]https://i.imgur.com/p7Fv1Z6.gif[/img] [url=https://ko-fi.com/balthoraz][img]https://i.imgur.com/W5PoNod.png[/img][/url]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 [h1]TEMPORALY NOT MAINTAINED[/h1]
-As I&apos;m working on another project, I don&apos;t have time to dedicate to this mod, also there are other mods outside doing what I wanted to do with this mod. So this one is not a priority for me at the moment. I&apos;m still working on RimUniverse series, but will be focused on other aspects of RimWorld.
+As I'm working on another project, I don't have time to dedicate to this mod, also there are other mods outside doing what I wanted to do with this mod. So this one is not a priority for me at the moment. I'm still working on RimUniverse series, but will be focused on other aspects of RimWorld.
 
 
 [h1]Main features[/h1]
-- [b]Biomes[/b] reworked. A complete new biome tile selection simulating real life biome distribution based on Whittaker&apos;s biome diagram.
+- [b]Biomes[/b] reworked. A complete new biome tile selection simulating real life biome distribution based on Whittaker's biome diagram.
 - [b]Added new biomes:[/b] Permafrost, Grassland, Savanna, Woodland and Moist Deciduous Forest.
 - Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.
 [hr][/hr]
@@ -67,7 +67,7 @@ Also thanks to Erdelf, Dr Zhivago, Jamaican Castle and Garthor for helping me in
 You can track the mod distribution in Google Sheets:
 https://docs.google.com/spreadsheets/d/1fF-fCsHRDGCFCzfQ3oNCWXQM7hxP0x5oreab4G-mqMI/edit?usp=sharing
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -78,4 +78,3 @@ https://docs.google.com/spreadsheets/d/1fF-fCsHRDGCFCzfQ3oNCWXQM7hxP0x5oreab4G-m
 [/list]
 </description>
 </ModMetaData>
-

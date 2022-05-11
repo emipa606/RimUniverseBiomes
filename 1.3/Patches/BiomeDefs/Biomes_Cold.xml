@@ -658,28 +658,6 @@
               </value>
             </match>
           </li>
-          <li Class="PatchOperationFindMod">
-            <!-- Erin's Mountain Animals -->
-            <mods>
-              <li>Erin's Mountain Animals</li>
-            </mods>
-            <match Class="PatchOperationSequence">
-              <operations>
-                <li Class="PatchOperationAdd">
-                  <xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
-                  <value>
-                    <Argali>0.293</Argali>
-                    <Pallas_cat>0.000</Pallas_cat>
-                    <Pika>0.220</Pika>
-                    <Snow_leopard>0.147</Snow_leopard>
-                  </value>
-                </li>
-                <li Class="PatchOperationRemove">
-                  <xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals/Pallas_cat</xpath>
-                </li>
-              </operations>
-            </match>
-          </li>
         </operations>
       </li>
       <!-- Cold Bog Patches -->
@@ -1330,21 +1308,6 @@
                 <AEXP_Hedgehog>0.200</AEXP_Hedgehog>
                 <AEXP_RedPanda>0.120</AEXP_RedPanda>
                 <AEXP_WildGoose>0.120</AEXP_WildGoose>
-              </value>
-            </match>
-          </li>
-          <li Class="PatchOperationFindMod">
-            <!-- Erin's Mountain Animals -->
-            <mods>
-              <li>Erin's Mountain Animals</li>
-            </mods>
-            <match Class="PatchOperationAdd">
-              <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
-              <value>
-                <Argali>0.160</Argali>
-                <Pika>0.200</Pika>
-                <Snow_leopard>0.080</Snow_leopard>
-                <Pallas_cat>0.024</Pallas_cat>
               </value>
             </match>
           </li>

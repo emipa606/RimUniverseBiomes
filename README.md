@@ -1,26 +1,25 @@
 # RimUniverseBiomes
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Balthorazs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2257048351
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 ![Image](https://i.imgur.com/p7Fv1Z6.gif)
- https://ko-fi.com/balthoraz]![Image](https://i.imgur.com/W5PoNod.png)
 
 # TEMPORALY NOT MAINTAINED
 
-As I&apos;m working on another project, I don&apos;t have time to dedicate to this mod, also there are other mods outside doing what I wanted to do with this mod. So this one is not a priority for me at the moment. I&apos;m still working on RimUniverse series, but will be focused on other aspects of RimWorld.
+As I'm working on another project, I don't have time to dedicate to this mod, also there are other mods outside doing what I wanted to do with this mod. So this one is not a priority for me at the moment. I'm still working on RimUniverse series, but will be focused on other aspects of RimWorld.
 
 
 # Main features
 
-- **Biomes** reworked. A complete new biome tile selection simulating real life biome distribution based on Whittaker&apos;s biome diagram.
+- **Biomes** reworked. A complete new biome tile selection simulating real life biome distribution based on Whittaker's biome diagram.
 - **Added new biomes:** Permafrost, Grassland, Savanna, Woodland and Moist Deciduous Forest.
 - Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.
 [hr][/hr]
@@ -74,7 +73,7 @@ Also thanks to Erdelf, Dr Zhivago, Jamaican Castle and Garthor for helping me in
 You can track the mod distribution in Google Sheets:
 https://docs.google.com/spreadsheets/d/1fF-fCsHRDGCFCzfQ3oNCWXQM7hxP0x5oreab4G-mqMI/edit?usp=sharing
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
