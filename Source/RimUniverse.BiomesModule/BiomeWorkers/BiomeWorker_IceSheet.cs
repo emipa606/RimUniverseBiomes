@@ -1,30 +1,27 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
 
-namespace RimUniverse.BiomesModule
+namespace RimUniverse.BiomesModule;
+
+public class BiomeWorker_IceSheet : BiomeWorker
 {
-    public class BiomeWorker_IceSheet : BiomeWorker
+    public override float GetScore(Tile tile, int tileID)
     {
-        public override float GetScore(Tile tile, int tileID)
+        // ABSOLUTE PARAMETERS
+        if (tile.WaterCovered || tile.temperature > -20f)
         {
-            // ABSOLUTE PARAMETERS
-            if (tile.WaterCovered || tile.temperature > -20f)
-            {
-                return -100f;
-            }
+            return -100f;
+        }
 
-            if (tile.temperature < -25f)
-            {
+        switch (tile.temperature)
+        {
+            case < -25f:
                 return 100f;
-            }
-
             // CONDITIONAL PARAMETERS
-            if (tile.temperature >= -25f)
-            {
+            case >= -25f:
                 return 10f + -tile.temperature - (tile.elevation / 100f);
-            }
-
-            return 0f;
+            default:
+                return 0f;
         }
     }
 }

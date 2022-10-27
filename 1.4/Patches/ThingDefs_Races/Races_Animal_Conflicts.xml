@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Removing conflicts -->
+  <Operation Class="PatchOperationFindMod">
+    <!-- Alpha Animals -->
+    <mods>
+      <li>Alpha Animals</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AA_Aerofleet" or defName="AA_AngelMothLarva" or defName="AA_AngelMoth" or defName="AA_AnimusVox" or defName="AA_ArcticLion" or defName="AA_Barbslinger" or defName="AA_BedBug" or defName="AA_Blizzarisk" or defName="AA_BloodShrimp" or defName="AA_BoulderMit" or defName="AA_Bumbledrone" or defName="AA_BumbledroneHierophant" or defName="AA_Cactipine" or defName="AA_ChameleonYak" or defName="AA_Cinderlisk" or defName="AA_CrystalMit" or defName="AA_DecayDrake" or defName="AA_DesertAve" or defName="AA_Dunealisk" or defName="AA_Feralisk" or defName="AA_FissionMouse" or defName="AA_FrostAve" or defName="AA_Frostmite" or defName="AA_Gigantelope" or defName="AA_GreatDevourer" or defName="AA_Groundrunner" or defName="AA_Helixien" or defName="AA_LarvalAtispec" or defName="AA_Lockjaw" or defName="AA_MammothWorm" or defName="AA_Mantrap" or defName="AA_MeadowAve" or defName="AA_MegaLouse" or defName="AA_Needlepost" or defName="AA_Needleroll" or defName="AA_NightAve" or defName="AA_Nightling" or defName="AA_OcularJelly" or defName="AA_OvergrownColossus" or defName="AA_PebbleMit" or defName="AA_Plasmorph" or defName="AA_Radyak" or defName="AA_RaptorShrimp" or defName="AA_RayHound" or defName="AA_Razorjack" or defName="AA_RipperHound" or defName="AA_RoughPlatedMonitor" or defName="AA_RoyalAve" or defName="AA_SandLion" or defName="AA_SandSquid" or defName="AA_ShockGoat" or defName="AA_Slurrypede" or defName="AA_Swarmling" or defName="AA_TeratogenicOriginator" or defName="AA_TetraSlug" or defName="AA_Thermadon" or defName="AA_Wildpawn" or defName="AA_Wildpod"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- Dinosauria -->
+    <mods>
+      <li>Dinosauria</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "Allosaurus" or defName = "Ankylosaurus" or defName = "Baryonyx" or defName = "Brachiosaurus" or defName = "Brontosaurus" or defName = "Carnotaurus" or defName = "Compsognathus" or defName = "Corythosaurus" or defName = "Dakotaraptor" or defName = "Deinocheirus" or defName = "Dilophosaurus" or defName = "Diplodocus" or defName = "Dryosaurus" or defName = "Gallimimus" or defName = "Gigantoraptor" or defName = "Iguanodon" or defName = "Magyarosaurus" or defName = "Minmi" or defName = "Pachycephalosaurus" or defName = "Parasaur" or defName = "Protoceratops" or defName = "Pteranodon" or defName = "Quetzalcoatlus" or defName = "Spinosaurus" or defName = "Stegosaurus" or defName = "Stygimoloch" or defName = "Therizinosaurus" or defName = "Triceratops" or defName = "TyrannosaurusRex" or defName = "Utahraptor" or defName = "Velociraptor" or defName = "Yutyrannus"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- Megafauna -->
+    <mods>
+      <li>Megafauna</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "Andrewsarchus" or defName = "Arthropleura" or defName = "Aurochs" or defName = "Castoroides" or defName = "Chalicotherium" or defName = "Daeodon" or defName = "Deinotherium" or defName = "Dinocrocuta" or defName = "Dinopithecus" or defName = "Dinornis" or defName = "Diprotodon" or defName = "Doedicurus" or defName = "Elasmotherium" or defName = "Enhydriodon" or defName = "Gigantophis" or defName = "Gigantopithecus" or defName = "Gomphotaria" or defName = "Josephoartigasia" or defName = "Macrauchenia" or defName = "Megalania" or defName = "Megaloceros" or defName = "Megalochelys" or defName = "Meganeura" or defName = "Palaeeudyptes" or defName ="Paraceratherium" or defName = "Platybelodon" or defName = "Procoptodon" or defName = "Pulmonoscorpius" or defName = "Purussaurus" or defName = "Quinkana" or defName = "ShortfacedBear" or defName = "Sivatherium" or defName = "Smilodon" or defName = "Titanis" or defName = "Titanoboa" or defName = "Uintatherium" or defName = "WoollyMammoth" or defName = "Zygolophodon"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Arid Shrubland -->
+    <mods>
+      <li>Vanilla Animals Expanded - Arid Shrubland</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Coyote" or defName = "AEXP_Giraffe" or defName = "AEXP_Hippopotamus" or defName = "AEXP_Zebra" or defName = "AEXP_Wildebeest" or defName = "AEXP_Crocodile" or defName = "AEXP_Cheetah"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Australia -->
+    <mods>
+      <li>Vanilla Animals Expanded - Australia</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Boombat" or defName = "AEXP_Kangaroo" or defName = "AEXP_Koala" or defName="AEXP_Platypus"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Boreal Forest -->
+    <mods>
+      <li>Vanilla Animals Expanded - Boreal Forest</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Otter" or defName="AEXP_ArcticCoyote" or defName="BlackBear"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Desert -->
+    <mods>
+      <li>Vanilla Animals Expanded - Desert</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Hyena" or defName = "AEXP_DesertTortoise" or defName = "AEXP_Lion" or defName = "AEXP_GilaMonster"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Ice Sheet -->
+    <mods>
+      <li>Vanilla Animals Expanded - Ice Sheet</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Penguin" or defName = "AEXP_Seal" or defName = "AEXP_Walrus"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Temperate Forest -->
+    <mods>
+      <li>Vanilla Animals Expanded - Temperate Forest</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_RedPanda" or defName = "AEXP_Badger" or defName = "AEXP_WildGoose" or defName="AEXP_Beaver" or defName="AEXP_Hedgehog"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Tropical Rainforest -->
+    <mods>
+      <li>Vanilla Animals Expanded - Tropical Rainforest</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Gorilla" or defName = "AEXP_Jaguar" or defName = "AEXP_Lemur" or defName = "AEXP_Mandrill" or defName = "AEXP_Tapir" or defName = "AEXP_Tiger"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Tropical Swamp -->
+    <mods>
+      <li>Vanilla Animals Expanded - Tropical Swamp</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Alligator" or defName = "AEXP_Anaconda" or defName = "AEXP_IndianElephant"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <!-- VAE - Tundra -->
+    <mods>
+      <li>Vanilla Animals Expanded - Tundra</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName = "AEXP_Muskox" or defName = "AEXP_Moose" or defName = "AEXP_MegaWolverine" or defName = "AEXP_Porcupine"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!-- Savanna patches -->
+      <li Class="PatchOperationSequence">
+        <!-- Animals -->
+        <operations>
+          <li Class="PatchOperationFindMod">
+            <!-- Megafauna -->
+            <mods>
+              <li>Megafauna</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <Andrewsarchus>0.005</Andrewsarchus>
+                <Arthropleura>0.335</Arthropleura>
+                <Daeodon>0.029</Daeodon>
+                <Deinotherium>0.144</Deinotherium>
+                <Gigantophis>0.010</Gigantophis>
+                <Procoptodon>0.096</Procoptodon>
+                <Purussaurus>0.005</Purussaurus>
+                <Sivatherium>0.096</Sivatherium>
+                <Titanis>0.048</Titanis>
+                <Titanoboa>0.029</Titanoboa>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindmod">
+            <!-- Alpha Animals -->
+            <mods>
+              <li>Alpha Animals</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <AA_Aerofleet>0.029</AA_Aerofleet>
+                <AA_AngelMoth>0.048</AA_AngelMoth>
+                <AA_AngelMothLarva>0.048</AA_AngelMothLarva>
+                <AA_Barbslinger>0.029</AA_Barbslinger>
+                <AA_BedBug>0.029</AA_BedBug>
+                <AA_BloodShrimp>0.010</AA_BloodShrimp>
+                <AA_BoulderMit>0.010</AA_BoulderMit>
+                <AA_Cactipine>0.144</AA_Cactipine>
+                <AA_DecayDrake>0.002</AA_DecayDrake>
+                <AA_DesertAve>0.029</AA_DesertAve>
+                <AA_Feralisk>0.002</AA_Feralisk>
+                <AA_Lockjaw>0.010</AA_Lockjaw>
+                <AA_MammothWorm>0.003</AA_MammothWorm>
+                <AA_Razorjack>0.010</AA_Razorjack>
+                <AA_RipperHound>0.010</AA_RipperHound>
+                <AA_Slurrypede>0.001</AA_Slurrypede>
+                <AA_TeratogenicOriginator>0.003</AA_TeratogenicOriginator>
+                <AA_TetraSlug>0.001</AA_TetraSlug>
+                <AA_Thermadon>0.002</AA_Thermadon>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Dinosauria -->
+            <mods>
+              <li>Dinosauria</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <Allosaurus>0.029</Allosaurus>
+                <Brachiosaurus>0.048</Brachiosaurus>
+                <Carnotaurus>0.029</Carnotaurus>
+                <Compsognathus>0.029</Compsognathus>
+                <Corythosaurus>0.048</Corythosaurus>
+                <Dakotaraptor>0.005</Dakotaraptor>
+                <Deinocheirus>0.144</Deinocheirus>
+                <Dilophosaurus>0.010</Dilophosaurus>
+                <Gallimimus>0.029</Gallimimus>
+                <Gigantoraptor>0.144</Gigantoraptor>
+                <Iguanodon>0.004</Iguanodon>
+                <Minmi>0.048</Minmi>
+                <Protoceratops>0.029</Protoceratops>
+                <Pteranodon>0.048</Pteranodon>
+                <Stegosaurus>0.048</Stegosaurus>
+                <Triceratops>0.048</Triceratops>
+                <Utahraptor>0.029</Utahraptor>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Arid Shrubland -->
+            <mods>
+              <li>Vanilla Animals Expanded - Arid Shrubland</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Coyote>0.096</AEXP_Coyote>
+                <AEXP_Crocodile>0.048</AEXP_Crocodile>
+                <AEXP_Giraffe>0.718</AEXP_Giraffe>
+                <AEXP_Hippopotamus>0.144</AEXP_Hippopotamus>
+                <AEXP_Wildebeest>0.239</AEXP_Wildebeest>
+                <AEXP_Zebra>0.718</AEXP_Zebra>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Australia -->
+            <mods>
+              <li>Vanilla Animals Expanded - Australia</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Boombat>0.003</AEXP_Boombat>
+                <AEXP_Kangaroo>0.479</AEXP_Kangaroo>
+                <AEXP_Koala>0.239</AEXP_Koala>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Desert -->
+            <mods>
+              <li>Vanilla Animals Expanded - Desert</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <AEXP_DesertTortoise>0.479</AEXP_DesertTortoise>
+                <AEXP_Hyena>0.144</AEXP_Hyena>
+                <AEXP_Lion>0.144</AEXP_Lion>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Temperate Forest -->
+            <mods>
+              <li>Vanilla Animals Expanded - Temperate Forest</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Badger>0.096</AEXP_Badger>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Tropical Rainforest -->
+            <mods>
+              <li>Vanilla Animals Expanded - Tropical Rainforest</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Gorilla>0.144</AEXP_Gorilla>
+                <AEXP_Tiger>0.096</AEXP_Tiger>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Tropical Swamp -->
+            <mods>
+              <li>Vanilla Animals Expanded - Tropical Swamp</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Alligator>0.048</AEXP_Alligator>
+                <AEXP_Anaconda>0.096</AEXP_Anaconda>
+                <AEXP_IndianElephant>0.144</AEXP_IndianElephant>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </li>
+      <!-- Arid Shrubland patches -->
+      <li Class="PatchOperationReplace">
+        <!-- Biomeworker -->
+        <xpath>/Defs/BiomeDef[defName="AridShrubland"]/workerClass</xpath>
+        <value>
+          <workerClass>RimUniverse.BiomesModule.BiomeWorker_AridShrubland</workerClass>
+        </value>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Density -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/BiomeDef[defName="AridShrubland"]/animalDensity</xpath>
+            <value>
+              <animalDensity>2.500</animalDensity>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/BiomeDef[defName="AridShrubland"]/plantDensity</xpath>
+            <value>
+              <plantDensity>1.250</plantDensity>
+            </value>
+          </li>
+        </operations>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Weather -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <!-- Vanilla -->
+            <xpath>/Defs/BiomeDef[defName="AridShrubland"]/baseWeatherCommonalities</xpath>
+            <value>
+              <baseWeatherCommonalities>
+                <Clear>8.458</Clear>
+                <DryThunderstorm>0.199</DryThunderstorm>
+                <Fog>0.249</Fog>
+                <Rain>0.896</Rain>
+                <RainyThunderstorm>0.199</RainyThunderstorm>
+              </baseWeatherCommonalities>
+            </value>
+          </li>
+        </operations>
+      </li>
+      <li Class="PatchOperationReplace">
+        <!-- Plants -->
+        <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+        <value>
+          <wildPlants>
+            <Plant_Agave>1.852</Plant_Agave>
+            <Plant_Bush>1.852</Plant_Bush>
+            <Plant_Grass>1.852</Plant_Grass>
+            <Plant_PincushionCactus>1.852</Plant_PincushionCactus>
+            <Plant_SaguaroCactus>0.864</Plant_SaguaroCactus>
+            <Plant_TallGrass>1.481</Plant_TallGrass>
+            <Plant_TreeDrago>0.247</Plant_TreeDrago>
+          </wildPlants>
+        </value>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Animals -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <!-- Vanilla -->
+            <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
+            <value>
+              <wildAnimals>
+                <Bison>0.390</Bison>
+                <Boomalope>0.005</Boomalope>
+                <Chinchilla>0.234</Chinchilla>
+                <Cougar>0.078</Cougar>
+                <Emu>0.781</Emu>
+                <Fox_Fennec>0.156</Fox_Fennec>
+                <Gazelle>0.781</Gazelle>
+                <GuineaPig>0.234</GuineaPig>
+                <Horse>0.234</Horse>
+                <Iguana>0.234</Iguana>
+                <Ostrich>0.390</Ostrich>
+              </wildAnimals>
+            </value>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Megafauna -->
+            <mods>
+              <li>Megafauna</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+              <value>
+                <Arthropleura>0.390</Arthropleura>
+                <Daeodon>0.016</Daeodon>
+                <Gigantophis>0.047</Gigantophis>
+                <Procoptodon>0.078</Procoptodon>
+                <Pulmonoscorpius>0.016</Pulmonoscorpius>
+                <Sivatherium>0.156</Sivatherium>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Alpha Animals -->
+            <mods>
+              <li>Alpha Animals</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+              <value>
+                <AA_Aerofleet>0.047</AA_Aerofleet>
+                <AA_AngelMothLarva>0.047</AA_AngelMothLarva>
+                <AA_AngelMoth>0.047</AA_AngelMoth>
+                <AA_AnimusVox>0.008</AA_AnimusVox>
+                <AA_Barbslinger>0.047</AA_Barbslinger>
+                <AA_BedBug>0.047</AA_BedBug>
+                <AA_BloodShrimp>0.016</AA_BloodShrimp>
+                <AA_BoulderMit>0.016</AA_BoulderMit>
+                <AA_Cactipine>0.234</AA_Cactipine>
+                <AA_Cinderlisk>0.008</AA_Cinderlisk>
+                <AA_DecayDrake>0.005</AA_DecayDrake>
+                <AA_Dunealisk>0.002</AA_Dunealisk>
+                <AA_Gigantelope>0.047</AA_Gigantelope>
+                <AA_MammothWorm>0.005</AA_MammothWorm>
+                <AA_Needlepost>0.078</AA_Needlepost>
+                <AA_Needleroll>0.078</AA_Needleroll>
+                <AA_Razorjack>0.016</AA_Razorjack>
+                <AA_RoughPlatedMonitor>0.047</AA_RoughPlatedMonitor>
+                <AA_SandSquid>0.047</AA_SandSquid>
+                <AA_Slurrypede>0.002</AA_Slurrypede>
+                <AA_TeratogenicOriginator>0.005</AA_TeratogenicOriginator>
+                <AA_TetraSlug>0.002</AA_TetraSlug>
+                <AA_Thermadon>0.003</AA_Thermadon>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Dinosauria -->
+            <mods>
+              <li>Dinosauria</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+              <value>
+                <Allosaurus>0.016</Allosaurus>
+                <Baryonyx>0.016</Baryonyx>
+                <Brontosaurus>0.047</Brontosaurus>
+                <Carnotaurus>0.047</Carnotaurus>
+                <Compsognathus>0.016</Compsognathus>
+                <Deinocheirus>0.234</Deinocheirus>
+                <Dilophosaurus>0.016</Dilophosaurus>
+                <Gallimimus>0.047</Gallimimus>
+                <Gigantoraptor>0.234</Gigantoraptor>
+                <Iguanodon>0.005</Iguanodon>
+                <Pachycephalosaurus>0.016</Pachycephalosaurus>
+                <Pteranodon>0.047</Pteranodon>
+                <Triceratops>0.078</Triceratops>
+                <Utahraptor>0.047</Utahraptor>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Arid Shrubland -->
+            <mods>
+              <li>Vanilla Animals Expanded - Arid Shrubland</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Coyote>0.156</AEXP_Coyote>
+                <AEXP_Crocodile>0.078</AEXP_Crocodile>
+                <AEXP_Giraffe>0.781</AEXP_Giraffe>
+                <AEXP_Wildebeest>0.234</AEXP_Wildebeest>
+                <AEXP_Zebra>0.781</AEXP_Zebra>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Australia -->
+            <mods>
+              <li>Vanilla Animals Expanded - Australia</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Boombat>0.005</AEXP_Boombat>
+                <AEXP_Kangaroo>0.781</AEXP_Kangaroo>
+                <AEXP_Koala>0.547</AEXP_Koala>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Desert -->
+            <mods>
+              <li>Vanilla Animals Expanded - Desert</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+              <value>
+                <AEXP_GilaMonster>0.156</AEXP_GilaMonster>
+                <AEXP_Hyena>0.234</AEXP_Hyena>
+                <AEXP_Lion>0.156</AEXP_Lion>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Temperate Forest -->
+            <mods>
+              <li>Vanilla Animals Expanded - Temperate Forest</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Badger>0.156</AEXP_Badger>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </li>
+      <!-- Desert patches -->
+      <li Class="PatchOperationReplace">
+        <!-- Biomeworker -->
+        <xpath>/Defs/BiomeDef[defName="Desert"]/workerClass</xpath>
+        <value>
+          <workerClass>RimUniverse.BiomesModule.BiomeWorker_Desert</workerClass>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <!-- Perlin -->
+        <xpath>/Defs/BiomeDef[defName="Desert"]/terrainPatchMakers</xpath>
+        <value>
+          <terrainPatchMakers>
+            <li>
+              <perlinFrequency>0.04</perlinFrequency>
+              <maxFertility>0.65</maxFertility>
+              <minSize>25</minSize>
+              <thresholds>
+                <li>
+                  <terrain>SoftSand</terrain>
+                  <min>0.90</min>
+                  <max>999</max>
+                </li>
+              </thresholds>
+            </li>
+          </terrainPatchMakers>
+        </value>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Density -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/BiomeDef[defName="Desert"]/animalDensity</xpath>
+            <value>
+              <animalDensity>1.750</animalDensity>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/BiomeDef[defName="Desert"]/plantDensity</xpath>
+            <value>
+              <plantDensity>0.500</plantDensity>
+            </value>
+          </li>
+        </operations>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Weather -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <!-- Vanilla -->
+            <xpath>/Defs/BiomeDef[defName="Desert"]/baseWeatherCommonalities</xpath>
+            <value>
+              <baseWeatherCommonalities>
+                <Clear>9.184</Clear>
+                <DryThunderstorm>0.306</DryThunderstorm>
+                <Rain>0.408</Rain>
+                <RainyThunderstorm>0.102</RainyThunderstorm>
+              </baseWeatherCommonalities>
+            </value>
+          </li>
+        </operations>
+      </li>
+      <li Class="PatchOperationReplace">
+        <!-- Plants -->
+        <xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
+        <value>
+          <wildPlants>
+            <Plant_Agave>2.703</Plant_Agave>
+            <Plant_Bush>1.622</Plant_Bush>
+            <Plant_Grass>1.622</Plant_Grass>
+            <Plant_PincushionCactus>2.703</Plant_PincushionCactus>
+            <Plant_SaguaroCactus>1.351</Plant_SaguaroCactus>
+          </wildPlants>
+        </value>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Animals -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <!-- Vanilla -->
+            <xpath>/Defs/BiomeDef[defName="Desert"]/wildAnimals</xpath>
+            <value>
+              <wildAnimals>
+                <Boomalope>0.006</Boomalope>
+                <Dromedary>0.291</Dromedary>
+                <Emu>0.969</Emu>
+                <Fox_Fennec>0.194</Fox_Fennec>
+                <Gazelle>0.969</Gazelle>
+                <Iguana>0.484</Iguana>
+                <Ostrich>0.291</Ostrich>
+              </wildAnimals>
+            </value>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Megafauna -->
+            <mods>
+              <li>Megafauna</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "Desert"]/wildAnimals</xpath>
+              <value>
+                <Daeodon>0.019</Daeodon>
+                <Gigantophis>0.058</Gigantophis>
+                <Megalania>0.058</Megalania>
+                <Procoptodon>0.058</Procoptodon>
+                <Pulmonoscorpius>0.058</Pulmonoscorpius>
+                <Titanoboa>0.058</Titanoboa>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Alpha Animals -->
+            <mods>
+              <li>Alpha Animals</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "Desert"]/wildAnimals</xpath>
+              <value>
+                <AA_Barbslinger>0.058</AA_Barbslinger>
+                <AA_BloodShrimp>0.058</AA_BloodShrimp>
+                <AA_Cactipine>0.678</AA_Cactipine>
+                <AA_Cinderlisk>0.010</AA_Cinderlisk>
+                <AA_DesertAve>0.097</AA_DesertAve>
+                <AA_Dunealisk>0.004</AA_Dunealisk>
+                <AA_Feralisk>0.002</AA_Feralisk>
+                <AA_GreatDevourer>0.019</AA_GreatDevourer>
+                <AA_MammothWorm>0.006</AA_MammothWorm>
+                <AA_Needlepost>0.194</AA_Needlepost>
+                <AA_Needleroll>0.194</AA_Needleroll>
+                <AA_Razorjack>0.019</AA_Razorjack>
+                <AA_RoughPlatedMonitor>0.058</AA_RoughPlatedMonitor>
+                <AA_SandLion>0.097</AA_SandLion>
+                <AA_SandSquid>0.097</AA_SandSquid>
+                <AA_Slurrypede>0.002</AA_Slurrypede>
+                <AA_TeratogenicOriginator>0.006</AA_TeratogenicOriginator>
+                <AA_Thermadon>0.004</AA_Thermadon>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Dinosauria -->
+            <mods>
+              <li>Dinosauria</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "Desert"]/wildAnimals</xpath>
+              <value>
+                <Allosaurus>0.010</Allosaurus>
+                <Baryonyx>0.010</Baryonyx>
+                <Iguanodon>0.003</Iguanodon>
+                <Utahraptor>0.058</Utahraptor>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Arid Shrubland -->
+            <mods>
+              <li>Vanilla Animals Expanded - Arid Shrubland</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "Desert"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Coyote>0.097</AEXP_Coyote>
+                <AEXP_Crocodile>0.097</AEXP_Crocodile>
+                <AEXP_Zebra>0.969</AEXP_Zebra>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Australia -->
+            <mods>
+              <li>Vanilla Animals Expanded - Australia</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "Desert"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Boombat>0.006</AEXP_Boombat>
+                <AEXP_Kangaroo>1.453</AEXP_Kangaroo>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Desert -->
+            <mods>
+              <li>Vanilla Animals Expanded - Desert</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "Desert"]/wildAnimals</xpath>
+              <value>
+                <AEXP_DesertTortoise>1.211</AEXP_DesertTortoise>
+                <AEXP_GilaMonster>0.194</AEXP_GilaMonster>
+                <AEXP_Hyena>0.194</AEXP_Hyena>
+                <AEXP_Lion>0.097</AEXP_Lion>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Extreme Desert -->
+            <mods>
+              <li>Vanilla Animals Expanded - Extreme Desert</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "Desert"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Megascorpion>0.194</AEXP_Megascorpion>
+                <AEXP_Rattlesnake>0.291</AEXP_Rattlesnake>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </li>
+      <!-- Extreme desert patches -->
+      <li Class="PatchOperationReplace">
+        <!-- Biomeworker -->
+        <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/workerClass</xpath>
+        <value>
+          <workerClass>RimUniverse.BiomesModule.BiomeWorker_ExtremeDesert</workerClass>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <!-- Perlin -->
+        <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/terrainPatchMakers</xpath>
+        <value>
+          <terrainPatchMakers>
+            <li>
+              <perlinFrequency>0.072</perlinFrequency>
+              <minSize>25</minSize>
+              <thresholds>
+                <li>
+                  <terrain>SoftSand</terrain>
+                  <min>0.90</min>
+                  <max>999</max>
+                </li>
+              </thresholds>
+            </li>
+          </terrainPatchMakers>
+        </value>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Density -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/animalDensity</xpath>
+            <value>
+              <animalDensity>1.125</animalDensity>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/plantDensity</xpath>
+            <value>
+              <plantDensity>0.100</plantDensity>
+            </value>
+          </li>
+        </operations>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Weather -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <!-- Vanilla -->
+            <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/baseWeatherCommonalities</xpath>
+            <value>
+              <baseWeatherCommonalities>
+                <Clear>9.694</Clear>
+                <DryThunderstorm>0.102</DryThunderstorm>
+                <Rain>0.204</Rain>
+              </baseWeatherCommonalities>
+            </value>
+          </li>
+        </operations>
+      </li>
+      <li Class="PatchOperationReplace">
+        <!-- Plants -->
+        <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
+        <value>
+          <wildPlants>
+            <Plant_Agave>4.000</Plant_Agave>
+            <Plant_PincushionCactus>4.000</Plant_PincushionCactus>
+            <Plant_SaguaroCactus>2.000</Plant_SaguaroCactus>
+          </wildPlants>
+        </value>
+      </li>
+      <li Class="PatchOperationSequence">
+        <!-- Animals -->
+        <operations>
+          <li Class="PatchOperationReplace">
+            <!-- Vanilla -->
+            <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildAnimals</xpath>
+            <value>
+              <wildAnimals>
+                <Dromedary>0.815</Dromedary>
+                <Fox_Fennec>0.163</Fox_Fennec>
+                <Iguana>0.815</Iguana>
+              </wildAnimals>
+            </value>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Megafauna -->
+            <mods>
+              <li>Megafauna</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildAnimals</xpath>
+              <value>
+                <Gigantophis>0.098</Gigantophis>
+                <Megalania>0.098</Megalania>
+                <Pulmonoscorpius>0.098</Pulmonoscorpius>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- Alpha Animals -->
+            <mods>
+              <li>Alpha Animals</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildAnimals</xpath>
+              <value>
+                <AA_Barbslinger>0.098</AA_Barbslinger>
+                <AA_BloodShrimp>0.098</AA_BloodShrimp>
+                <AA_Cactipine>1.141</AA_Cactipine>
+                <AA_Cinderlisk>0.0016</AA_Cinderlisk>
+                <AA_DecayDrake>0.03</AA_DecayDrake>
+                <AA_DesertAve>0.326</AA_DesertAve>
+                <AA_Dunealisk>0.010</AA_Dunealisk>
+                <AA_GreatDevourer>0.033</AA_GreatDevourer>
+                <AA_Needlepost>0.326</AA_Needlepost>
+                <AA_Needleroll>0.326</AA_Needleroll>
+                <AA_Razorjack>0.033</AA_Razorjack>
+                <AA_RoughPlatedMonitor>0.098</AA_RoughPlatedMonitor>
+                <AA_SandLion>0.163</AA_SandLion>
+                <AA_SandSquid>0.163</AA_SandSquid>
+                <AA_Slurrypede>0.003</AA_Slurrypede>
+                <AA_TeratogenicOriginator>0.010</AA_TeratogenicOriginator>
+                <AA_Thermadon>0.007</AA_Thermadon>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Australia -->
+            <mods>
+              <li>Vanilla Animals Expanded - Australia</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Boombat>0.010</AEXP_Boombat>
+                <AEXP_Kangaroo>2.445</AEXP_Kangaroo>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Desert -->
+            <mods>
+              <li>Vanilla Animals Expanded - Desert</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildAnimals</xpath>
+              <value>
+                <AEXP_DesertTortoise>1.630</AEXP_DesertTortoise>
+                <AEXP_Lion>0.163</AEXP_Lion>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationFindMod">
+            <!-- VAE - Extreme Desert -->
+            <mods>
+              <li>Vanilla Animals Expanded - Extreme Desert</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildAnimals</xpath>
+              <value>
+                <AEXP_Megascorpion>0.326</AEXP_Megascorpion>
+                <AEXP_Rattlesnake>0.489</AEXP_Rattlesnake>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
