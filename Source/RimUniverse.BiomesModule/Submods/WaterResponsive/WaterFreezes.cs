@@ -6,13 +6,9 @@ using Verse;
 
 namespace RimUniverse.BiomesModule.Submods.WaterFreezes;
 
-public class WaterFreezes : MapComponent
+public class WaterFreezes(Map map) : MapComponent(map)
 {
     public int loopCycle;
-
-    public WaterFreezes(Map map) : base(map)
-    {
-    }
 
     public override void MapComponentTick()
     {
