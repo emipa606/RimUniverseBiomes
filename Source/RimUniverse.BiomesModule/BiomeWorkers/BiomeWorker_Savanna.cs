@@ -5,7 +5,7 @@ namespace RimUniverse.BiomesModule;
 
 public class BiomeWorker_Savanna : BiomeWorker
 {
-    public override float GetScore(Tile tile, int tileID)
+    public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
     {
         // ABSOLUTE PARAMETERS
         if (tile.WaterCovered || tile.temperature < 18f || tile.rainfall is < 759f or > 1315f)

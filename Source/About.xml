@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>RimUniverse - Biomes</name>
   <author>Balthoraz</author>
@@ -20,16 +20,16 @@
     </li>
   </modDependencies>
   <description>
-   &lt;size=18&gt;Features&lt;/size&gt;
+   &lt;size=18>Features&lt;/size>
    - Biomes reworked. A complete new biome system simulating real life biome distribution based on Whittaker's biome diagram.
    - Added new biomes: Permafrost, Grassland, Savanna, Woodland and Moist Decidius Forest.
    - Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.
 
-   &lt;size=18&gt;Submods&lt;/size&gt;
+   &lt;size=18>Submods&lt;/size>
    - WaterResponsive: Rivers, lakes, marsh water and coastal water will respond to extreme low temperatures freezing the water.		
 
 
-   &lt;size=18&gt;Contributions (Credits):&lt;/size&gt;
+   &lt;size=18>Contributions (Credits):&lt;/size>
    Erdelf - ShowModDesignators (Introduced on RimUniverse).
 
    Also thanks to erdelf, Dr Zhivago, Jamaican Castle and Garthor to help me on my first steps in modding and made this mod and all future updates possible.

@@ -5,7 +5,7 @@ namespace RimUniverse.BiomesModule;
 
 public class BiomeWorker_Grassland : BiomeWorker
 {
-    public override float GetScore(Tile tile, int tileID)
+    public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
     {
         // ABSOLUTE PARAMETERS
         if (tile.WaterCovered || tile.temperature is < -8f or > 18f || tile.rainfall is < 266f or > 1194f)

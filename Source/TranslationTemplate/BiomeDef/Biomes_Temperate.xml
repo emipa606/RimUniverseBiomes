@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: grassland -->
+  <Grassland.label>grassland</Grassland.label>
+  <!-- EN: Grasslands, as the name suggests, are areas where the vegetation is dominated by grasses and shrubs. The soil is fertile, but there is little protection from the elements.\n(RimUniverse - Biomes (Continued)) -->
+  <Grassland.description>Grasslands, as the name suggests, are areas where the vegetation is dominated by grasses and shrubs. The soil is fertile, but there is little protection from the elements.
+(RimUniverse - Biomes (Continued))</Grassland.description>
+  <!-- EN: woodland -->
+  <Woodland.label>woodland</Woodland.label>
+  <!-- EN: A Woodland is a land covered with trees in a less density than forests. They form open habitats with plenty of sunlight. Woodlands may support shrubs and herbaceous plants including grasses and healroots. Woodlands are a form of transition to shrublands under dryer conditions.\n(RimUniverse - Biomes (Continued)) -->
+  <Woodland.description>A Woodland is a land covered with trees in a less density than forests. They form open habitats with plenty of sunlight. Woodlands may support shrubs and herbaceous plants including grasses and healroots. Woodlands are a form of transition to shrublands under dryer conditions.
+(RimUniverse - Biomes (Continued))</Woodland.description>
+</LanguageData>

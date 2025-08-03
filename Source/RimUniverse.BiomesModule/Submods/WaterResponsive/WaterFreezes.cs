@@ -8,11 +8,11 @@ namespace RimUniverse.BiomesModule.Submods.WaterFreezes;
 
 public class WaterFreezes(Map map) : MapComponent(map)
 {
-    public int loopCycle;
+    private int loopCycle;
 
     public override void MapComponentTick()
     {
-        if (Controller.Settings.waterResponsive.Equals(false) || map.Biome == BiomeDefOf.SeaIce)
+        if (Controller.Settings.WaterResponsive.Equals(false) || map.Biome == BiomeDefOf.SeaIce)
         {
             return;
         }

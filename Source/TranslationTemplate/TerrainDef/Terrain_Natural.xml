@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: frozen water -->
+  <IceDeep.label>frozen water</IceDeep.label>
+  <!-- EN: frozen marsh -->
+  <IceMarsh.label>frozen marsh</IceMarsh.label>
+  <!-- EN: frozen water -->
+  <IceMovingChestDeep.label>frozen water</IceMovingChestDeep.label>
+  <!-- EN: frozen water -->
+  <IceMovingShallow.label>frozen water</IceMovingShallow.label>
+  <!-- EN: frozen ocean -->
+  <IceOceanShallow.label>frozen ocean</IceOceanShallow.label>
+  <!-- EN: frozen water -->
+  <IceShallow.label>frozen water</IceShallow.label>
+</LanguageData>

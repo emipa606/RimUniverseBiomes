@@ -2,5 +2,14 @@
   "Continued": true,
   "CanAdd": "1",
   "CanRemove": "1",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 47848,
+  "LinesOfXML": 184263,
+  "CodeBaseSize": 85,
+  "LastXmlCleaning": "2025-08-03T11:39:06.9903068+02:00",
+  "SocialImageSet": true,
+  "SearchTags": "biomes"
 }
