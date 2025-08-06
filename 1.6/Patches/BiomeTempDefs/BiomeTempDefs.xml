@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Fishing Expanded</li>
-    </mods>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeCold"]</xpath>
+    <success>Always</success>
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
