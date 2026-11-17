@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef>
+    <defName>IceShallow</defName>
+    <label>frozen water</label>
+    <texturePath>Terrain/Surfaces/ThinIce</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>15</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.00</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>IceMovingShallow</defName>
+    <label>frozen water</label>
+    <texturePath>Terrain/Surfaces/ThinIce</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>30</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.00</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>IceOceanShallow</defName>
+    <label>frozen ocean</label>
+    <texturePath>Terrain/Surfaces/ThinIce</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>15</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.00</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>IceDeep</defName>
+    <label>frozen water</label>
+    <texturePath>Terrain/Surfaces/ThinIce</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>30</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.00</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>IceMovingChestDeep</defName>
+    <label>frozen water</label>
+    <texturePath>Terrain/Surfaces/ThinIce</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>15</pathCost>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.00</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>IceMarsh</defName>
+    <label>frozen marsh</label>
+    <texturePath>Terrain/Surfaces/ThinIceMarsh</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>30</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.00</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+</Defs>

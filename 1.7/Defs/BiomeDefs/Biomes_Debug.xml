@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BiomeDef>
+    <defName>Debug</defName>
+    <label>Debug cell</label>
+    <description>No biome found for this cell! Biomeworker needs an adjust!</description>
+    <workerClass>RimUniverse.BiomesModule.BiomeWorker_Debug</workerClass>
+    <canBuildBase>false</canBuildBase>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <texture>World/Biomes/Debug</texture>
+    <impassable>true</impassable>
+  </BiomeDef>
+</Defs>

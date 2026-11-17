@@ -6,4 +6,32 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="RimUniverse.BiomesModule/RimUniverse.BiomesModule.csproj" />
+  <Folder Name="/XML/1.7/Defs/TerrainDefs/">
+    <File Path="../1.7/Defs/TerrainDefs/Terrain_Natural.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/ThingDefs_Races/">
+    <File Path="../1.7/Patches/ThingDefs_Races/Races_Animal_Conflicts.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/Storyteller/">
+    <File Path="../1.7/Patches/Storyteller/Incidents_Map_Misc.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/BiomeDefs/">
+    <File Path="../1.7/Patches/BiomeDefs/Biomes_Cold.xml" />
+    <File Path="../1.7/Patches/BiomeDefs/Biomes_Temperate.xml" />
+    <File Path="../1.7/Patches/BiomeDefs/Biomes_Warm.xml" />
+    <File Path="../1.7/Patches/BiomeDefs/Biomes_WarmArid.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/BiomeTempDefs/">
+    <File Path="../1.7/Patches/BiomeTempDefs/BiomeTempDefs.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/BiomeDefs/">
+    <File Path="../1.7/Defs/BiomeDefs/Biomes_Cold.xml" />
+    <File Path="../1.7/Defs/BiomeDefs/Biomes_Debug.xml" />
+    <File Path="../1.7/Defs/BiomeDefs/Biomes_Temperate.xml" />
+    <File Path="../1.7/Defs/BiomeDefs/Biomes_Warm.xml" />
+    <File Path="../1.7/Defs/BiomeDefs/Biomes_WarmArid.xml" />
+  </Folder>
 </Solution>

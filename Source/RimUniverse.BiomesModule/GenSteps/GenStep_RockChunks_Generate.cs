@@ -5,9 +5,8 @@ using Verse;
 namespace RimUniverse.BiomesModule;
 
 [HarmonyPatch(typeof(GenStep_RockChunks), nameof(GenStep_RockChunks.Generate))]
-public class GenStep_RockChunks_Generate
+public static class GenStep_RockChunks_Generate
 {
-    [HarmonyPrefix]
     public static bool Prefix(Map map)
     {
         return map.Biome != BiomeDefOf.IceSheet;

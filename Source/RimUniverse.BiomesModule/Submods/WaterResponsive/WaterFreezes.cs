@@ -38,34 +38,70 @@ public class WaterFreezes(Map map) : MapComponent(map)
             var terrainDef = map.terrainGrid.TerrainAt(terrainCell);
 
             // freeze process
-            if (terrainTemp < -35f)
+            if (terrainTemp < -35f && terrainDef.defName == "WaterOceanShallow")
             {
-                if (terrainDef.defName == "WaterOceanShallow")
+                var toFreeze = 0;
+                var tempConstant = 0f;
+                var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
+                tileList.Add(terrainCell);
+                var newTile = tileList.RandomElement();
+                if (newTile.InBounds(map))
                 {
-                    var toFreeze = 0;
-                    var tempConstant = 0f;
-                    var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
-                    tileList.Add(terrainCell);
-                    var newTile = tileList.RandomElement();
-                    if (newTile.InBounds(map))
+                    if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Water") &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Marsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
                     {
-                        if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Water") &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Marsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
+                        toFreeze++;
+                        tempConstant++;
+                    }
+
+                    if (terrainDef.defName == "WaterOceanShallow" &&
+                        Rand.Value < shallowSpeed * toFreeze * (tempConstant * 30f))
+                    {
+                        string iceName;
+                        if (terrainDef.defName == "WaterOceanShallow")
                         {
-                            toFreeze++;
-                            tempConstant++;
+                            iceName = "IceOceanShallow";
+                        }
+                        else
+                        {
+                            continue;
                         }
 
-                        if (terrainDef.defName == "WaterOceanShallow")
+                        map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
+                    }
+                }
+            }
+
+            if (terrainTemp < -20f && terrainDef.defName is "WaterMovingShallow" or "WaterMovingChestDeep")
+            {
+                var toFreeze = 0;
+                var tempConstant = 0f;
+                var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
+                tileList.Add(terrainCell);
+                var newTile = tileList.RandomElement();
+                if (newTile.InBounds(map))
+                {
+                    if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Water") &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Marsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
+                    {
+                        toFreeze++;
+                        tempConstant++;
+                    }
+
+                    switch (terrainDef.defName)
+                    {
+                        case "WaterMovingShallow":
                         {
                             if (Rand.Value < shallowSpeed * toFreeze * (tempConstant * 30f))
                             {
                                 string iceName;
-                                if (terrainDef.defName == "WaterOceanShallow")
+                                if (terrainDef.defName == "WaterMovingShallow")
                                 {
-                                    iceName = "IceOceanShallow";
+                                    iceName = "IceMovingShallow";
                                 }
                                 else
                                 {
@@ -74,129 +110,83 @@ public class WaterFreezes(Map map) : MapComponent(map)
 
                                 map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
                             }
+
+                            break;
+                        }
+                        case "WaterMovingChestDeep":
+                        {
+                            if (Rand.Value < deepSpeed * toFreeze * (tempConstant * 3f))
+                            {
+                                string iceName;
+                                if (terrainDef.defName == "WaterMovingChestDeep")
+                                {
+                                    iceName = "IceMovingChestDeep";
+                                }
+                                else
+                                {
+                                    continue;
+                                }
+
+                                map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
+                            }
+
+                            break;
                         }
                     }
                 }
             }
 
-            if (terrainTemp < -20f)
+            if (terrainTemp < 0f &&
+                terrainDef.defName is "WaterShallow" or "Marsh" or "WaterDeep" or "WaterOceanShallow")
             {
-                if (terrainDef.defName is "WaterMovingShallow" or "WaterMovingChestDeep")
+                var toFreeze = 0;
+                var tempConstant = 0f;
+                var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
+                tileList.Add(terrainCell);
+                var newTile = tileList.RandomElement();
+                if (newTile.InBounds(map))
                 {
-                    var toFreeze = 0;
-                    var tempConstant = 0f;
-                    var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
-                    tileList.Add(terrainCell);
-                    var newTile = tileList.RandomElement();
-                    if (newTile.InBounds(map))
+                    if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Water") &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Marsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
                     {
-                        if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Water") &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Marsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
-                        {
-                            toFreeze++;
-                            tempConstant++;
-                        }
-
-                        switch (terrainDef.defName)
-                        {
-                            case "WaterMovingShallow":
-                            {
-                                if (Rand.Value < shallowSpeed * toFreeze * (tempConstant * 30f))
-                                {
-                                    string iceName;
-                                    if (terrainDef.defName == "WaterMovingShallow")
-                                    {
-                                        iceName = "IceMovingShallow";
-                                    }
-                                    else
-                                    {
-                                        continue;
-                                    }
-
-                                    map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
-                                }
-
-                                break;
-                            }
-                            case "WaterMovingChestDeep":
-                            {
-                                if (Rand.Value < deepSpeed * toFreeze * (tempConstant * 3f))
-                                {
-                                    string iceName;
-                                    if (terrainDef.defName == "WaterMovingChestDeep")
-                                    {
-                                        iceName = "IceMovingChestDeep";
-                                    }
-                                    else
-                                    {
-                                        continue;
-                                    }
-
-                                    map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
-                                }
-
-                                break;
-                            }
-                        }
+                        toFreeze++;
+                        tempConstant++;
                     }
-                }
-            }
 
-            if (terrainTemp < 0f)
-            {
-                if (terrainDef.defName is "WaterShallow" or "Marsh" or "WaterDeep" or "WaterOceanShallow")
-                {
-                    var toFreeze = 0;
-                    var tempConstant = 0f;
-                    var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
-                    tileList.Add(terrainCell);
-                    var newTile = tileList.RandomElement();
-                    if (newTile.InBounds(map))
+                    switch (terrainDef.defName)
                     {
-                        if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Water") &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Marsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
+                        case "WaterShallow":
+                        case "Marsh":
                         {
-                            toFreeze++;
-                            tempConstant++;
+                            if (Rand.Value < shallowSpeed * toFreeze * (tempConstant * 10f))
+                            {
+                                var iceName = terrainDef.defName == "WaterShallow" ? "IceShallow" : "IceMarsh";
+
+                                map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
+                            }
+
+                            break;
                         }
-
-                        switch (terrainDef.defName)
+                        case "WaterDeep":
                         {
-                            case "WaterShallow":
-                            case "Marsh":
+                            if (Rand.Value < deepSpeed * toFreeze * (tempConstant * 10f))
                             {
-                                if (Rand.Value < shallowSpeed * toFreeze * (tempConstant * 10f))
+                                string iceName;
+                                if (terrainDef.defName == "WaterDeep")
                                 {
-                                    var iceName = terrainDef.defName == "WaterShallow" ? "IceShallow" : "IceMarsh";
-
-                                    map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
+                                    iceName = "IceDeep";
+                                }
+                                else
+                                {
+                                    continue;
                                 }
 
-                                break;
+                                map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
                             }
-                            case "WaterDeep":
-                            {
-                                if (Rand.Value < deepSpeed * toFreeze * (tempConstant * 10f))
-                                {
-                                    string iceName;
-                                    if (terrainDef.defName == "WaterDeep")
-                                    {
-                                        iceName = "IceDeep";
-                                    }
-                                    else
-                                    {
-                                        continue;
-                                    }
 
-                                    map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(iceName));
-                                }
-
-                                break;
-                            }
+                            break;
                         }
                     }
                 }
@@ -204,79 +194,73 @@ public class WaterFreezes(Map map) : MapComponent(map)
 
             // Thaw process
             string waterName;
-            if (terrainTemp > -19f)
+            if (terrainTemp > -19f && terrainDef.defName == "IceOceanShallow")
             {
-                if (terrainDef.defName == "IceOceanShallow")
+                var toThaw = 0;
+                var tempConstant = 0f;
+                var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
+                tileList.Add(terrainCell);
+                var newTile = tileList.RandomElement();
+                if (newTile.InBounds(map))
                 {
-                    var toThaw = 0;
-                    var tempConstant = 0f;
-                    var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
-                    tileList.Add(terrainCell);
-                    var newTile = tileList.RandomElement();
-                    if (newTile.InBounds(map))
+                    if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Ice") &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
                     {
-                        if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Ice") &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
+                        toThaw++;
+                        tempConstant++;
+                    }
+
+                    if (Rand.Value < thawSpeed * toThaw * (tempConstant * 5f))
+                    {
+                        if (terrainDef.defName == "IceOceanShallow")
                         {
-                            toThaw++;
-                            tempConstant++;
+                            waterName = "WaterOceanShallow";
+                        }
+                        else
+                        {
+                            continue;
                         }
 
-                        if (Rand.Value < thawSpeed * toThaw * (tempConstant * 5f))
+                        if (waterName.Contains("Water"))
                         {
-                            if (terrainDef.defName == "IceOceanShallow")
-                            {
-                                waterName = "WaterOceanShallow";
-                            }
-                            else
-                            {
-                                continue;
-                            }
-
-                            if (waterName.Contains("Water"))
-                            {
-                                map.snowGrid.SetDepth(terrainCell, 0f);
-                            }
-
-                            map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(waterName));
+                            map.snowGrid.SetDepth(terrainCell, 0f);
                         }
+
+                        map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(waterName));
                     }
                 }
             }
 
-            if (terrainTemp > -13f)
+            if (terrainTemp > -13f && terrainDef.defName is "IceMovingShallow" or "IceMovingChestDeep")
             {
-                if (terrainDef.defName is "IceMovingShallow" or "IceMovingChestDeep")
+                var toThaw = 0;
+                var tempConstant = 0f;
+                var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
+                tileList.Add(terrainCell);
+                var newTile = tileList.RandomElement();
+                if (newTile.InBounds(map))
                 {
-                    var toThaw = 0;
-                    var tempConstant = 0f;
-                    var tileList = GenAdjFast.AdjacentCellsCardinal(terrainCell);
-                    tileList.Add(terrainCell);
-                    var newTile = tileList.RandomElement();
-                    if (newTile.InBounds(map))
+                    if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Ice") &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
+                        map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
                     {
-                        if (!map.terrainGrid.TerrainAt(newTile).defName.Contains("Ice") &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "BridgeMarsh" &&
-                            map.terrainGrid.TerrainAt(newTile).defName != "Bridge")
+                        toThaw++;
+                        tempConstant++;
+                    }
+
+                    if (Rand.Value < thawSpeed * toThaw * (tempConstant * 5f))
+                    {
+                        waterName = terrainDef.defName == "IceMovingShallow"
+                            ? "WaterMovingShallow"
+                            : "WaterMovingChestDeep";
+
+                        if (waterName.Contains("Water"))
                         {
-                            toThaw++;
-                            tempConstant++;
+                            map.snowGrid.SetDepth(terrainCell, 0f);
                         }
 
-                        if (Rand.Value < thawSpeed * toThaw * (tempConstant * 5f))
-                        {
-                            waterName = terrainDef.defName == "IceMovingShallow"
-                                ? "WaterMovingShallow"
-                                : "WaterMovingChestDeep";
-
-                            if (waterName.Contains("Water"))
-                            {
-                                map.snowGrid.SetDepth(terrainCell, 0f);
-                            }
-
-                            map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(waterName));
-                        }
+                        map.terrainGrid.SetTerrain(terrainCell, TerrainDef.Named(waterName));
                     }
                 }
             }

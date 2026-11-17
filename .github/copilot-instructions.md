@@ -1,39 +1,66 @@
 # GitHub Copilot Instructions for RimUniverse - Biomes (Continued)
 
-## Mod Overview and Purpose
+## Overview
 
-"RimUniverse - Biomes (Continued)" is an updated continuation of Balthorazs' original mod, aimed at enhancing the RimWorld experience by reworking and expanding biome types. The mod provides a realistic simulation of biome distribution inspired by Whittaker's biome diagram, as well as features that allow bodies of water to freeze under extreme low temperatures. This mod is part of the RimUniverse series, although it is currently not actively maintained as the developer focuses on other projects.
+RimUniverse - Biomes (Continued) is a RimWorld mod that reworks the game's biomes to better simulate real-life biome distribution based on Whittaker's biome diagram. It adds new biomes such as Permafrost, Grassland, Savanna, Woodland, and Moist Deciduous Forest, and makes water bodies such as rivers, lakes, marshes, and coastal waters respond to extreme low temperatures by freezing the water. This mod is compatible with other RimWorld mods and can be used alongside them without issues.
 
 ## Key Features and Systems
 
-- **Biome Rework**: The mod overhauls the biome selection process to mimic real-life ecological zones, leading to more diverse and immersive gameplay environments.
-- **New Biomes Added**: Introduces five new biomes: Permafrost, Grassland, Savanna, Woodland, and Moist Deciduous Forest.
-- **WaterResponsive System**: A submod feature where rivers, lakes, marsh water, and coastal water freeze under extremely low temperatures, affecting gameplay and strategy.
+- **Biomes Reworked**: The mod reworks the game's biomes to better simulate real-life biome distribution based on Whittaker's biome diagram.
+- **New Biomes**: The mod adds new biomes such as Permafrost, Grassland, Savanna, Woodland, and Moist Deciduous Forest.
+- **Water Responsive**: Rivers, lakes, marshes, and coastal waters respond to extreme low temperatures by freezing the water.
 
 ## Coding Patterns and Conventions
 
-- **Naming Conventions**: Classes related to biomes follow a consistent naming pattern, `BiomeWorker_{BiomeName}`, inheriting from the `BiomeWorker` base class for uniform handling.
-- **Structure and Organization**: The source files are organized based on functionality, with each biome getting its own dedicated file and class for clarity and ease of maintenance.
+The mod follows the following coding patterns and conventions:
+
+- **Mod Structure**: The mod is organized into submods, each of which handles a specific feature of the mod.
+- **C# Code**: The mod uses C# code to implement the various features of the mod, including biome rework and water responsiveness.
+- **XML Integration**: The mod uses XML files to define the biomes and other game objects.
 
 ## XML Integration
 
-- XML files are crucial for defining biome properties and integrating them into the game. Ensure XML files are correctly structured to match RimWorld's requirements, typically defining biome parameters like temperature ranges, precipitation, and common vegetation or creatures.
+The mod uses XML files to define the biomes and other game objects. The XML files are located in the `Defs` folder of the mod and are structured as follows:
+
+xml
+<Defs>
+    <BiomeDef>
+        <defName>Cold</defName>
+        <label>Cold</label>
+        <description>A cold biome.</description>
+        <temperatureRange>
+            <min>-10</min>
+            <max>5</max>
+        </temperatureRange>
+    </BiomeDef>
+</Defs>
+
 
 ## Harmony Patching
 
-- **Harmony Library**: Utilize the Harmony library to patch RimWorld methods where necessary. This is useful for altering base game logic without directly modifying the original code, ensuring compatibility and ease of updates.
-- Create postfix or prefix methods to modify the behavior of biome generation or water response mechanics.
-  
+The mod uses Harmony patching to modify the behavior of the game. Harmony patching allows the mod to modify the code of the game without having to modify the game's source code. The mod uses Harmony patching to modify the behavior of the game's biome generation system and water system.
+
 ## Suggestions for Copilot
 
-- **Autocomplete for Biome Workers**: Utilize GitHub Copilot to assist in generating new `BiomeWorker` classes. Copilot can help reduce repetitive coding through suggestion patterns based on existing code structure.
-  
-- **Method Suggestions**: Use Copilot to suggest methods for specific tasks such as generating biome features or handling water freezing logic. Explicit and consistent method naming will help Copilot recognize patterns.
+Here are some suggestions for Copilot:
 
-- **XML and Harmony**: Copilot can assist with writing XML configurations or Harmony patches by predicting typical tag structures or method alteration patterns based on context within the project.
+- Use Copilot to generate C# code for new features or bug fixes.
+- Use Copilot to generate XML files for new biomes or other game objects.
+- Use Copilot to generate Harmony patches for modifying the game's behavior.
+- Use Copilot to generate test cases for new features or bug fixes.
 
-- **Comments and Documentation**: Encourage Copilot to generate inline comments and documentation to ensure code maintainability and readability for future developers.
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
 
-- **Error Handling and Optimization**: Prompt Copilot to suggest error handling routines or potential optimizations, especially in complex biome generation algorithms or resource-intensive simulation routines.
 
-By following these guidelines, developers can efficiently extend and maintain the RimUniverse - Biomes mod with the assistance of GitHub Copilot while adhering to consistent coding standards.
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+- When mentioning SonarQube issues, automatically use the SonarQube MCP service to fetch and address issues instead of making inferred fixes without querying SonarQube first.
+- When mentioning the rimworld log, automatically use the Rimworld MCP service to fetch the log.
+
